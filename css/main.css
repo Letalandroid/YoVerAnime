@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --color: rgb(33, 231, 235);
+}
+
+header {
+    height: 78.89px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color);
+    padding: 0 28px;
+}
+
+header img {
+    width: 60px;
+}
+
+[alt="usuario-de-perfil"]:hover {
+    cursor: pointer;
+}
+
+main {
+    margin: 50px 80px;
+}
+
+main p {
+    margin-bottom: 30px;
+}
+
+main h2 {
+    font-size: 1.8em;
+}
+
+.animes-list {
+    margin: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.anime {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    text-align: center;
+    text-decoration: none;
+    margin: 10px;
+}
+
+.anime img {
+    width: 200px;
+}
+
+.my {
+    display: none;
+    position: absolute;
+    top: 80px;
+    right: 11px;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+
+.my li {
+    padding: 5px;
+    list-style: none;
+}
+
+.my li:first-child {
+    border-bottom: 1px solid #000;
+}
+
+.my li:last-child {
+    color: #fff;
+    background-color: #000;
+}
+
+.my li:last-child {
+    cursor: pointer;
+}

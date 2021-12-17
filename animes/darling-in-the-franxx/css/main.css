@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --color: rgb(33, 231, 235);
+}
+
+header {
+    height: 78.89px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color);
+    padding: 0 28px;
+}
+
+header img {
+    width: 60px;
+}
+
+[alt="usuario-de-perfil"]:hover {
+    cursor: pointer;
+}
+
+main {
+    margin: 30px;
+}
+
+.content {
+    display: flex;
+}
+
+.content img {
+    width: 300px;
+}
+
+.sinopsis {
+    margin-left: 20px;
+}
+
+.sinopsis h2 {
+    text-decoration: underline;
+    margin-bottom: 10px;
+}
+
+.episodios {
+    margin: 20px 0;
+}
+
+.episodios img {
+    width: 80px;
+    border-radius: 10px 0 0 10px;
+}
+
+.episodio {
+    display: flex;
+    align-items: center;
+    border: 1px solid #000;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    transition: .1s all;
+}
+
+.episodio p {
+    margin-left: 20px;
+}
+
+.episodio:hover {
+    cursor: pointer;
+    color: #fff;
+    text-decoration: underline;
+    background-color: var(--color);
+}
+
+.e-video {
+    display: none;
+    justify-content: center;
+}
+
+.e-video video {
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+.my {
+    display: none;
+    position: absolute;
+    top: 80px;
+    right: 11px;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+
+.my li {
+    padding: 5px;
+    list-style: none;
+}
+
+.my li:first-child {
+    border-bottom: 1px solid #000;
+}
+
+.my li:last-child {
+    color: #fff;
+    background-color: #000;
+}
+
+.my li:last-child {
+    cursor: pointer;
+}

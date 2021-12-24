@@ -13,11 +13,12 @@ header {
     justify-content: space-between;
     align-items: center;
     background-color: var(--color);
-    padding: 0 28px;
+    padding: 0 20px;
 }
 
 header img {
     width: 60px;
+    border-radius: 50%;
 }
 
 [alt="usuario-de-perfil"]:hover {
@@ -83,13 +84,22 @@ main {
     width: 100%;
 }
 
+.my-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100.42px;
+    height: 130px;
+    margin-top: 72.5px;
+}
+
 .my {
     display: none;
-    position: absolute;
-    top: 80px;
-    right: 11px;
     border: 1px solid #000;
     border-radius: 5px;
+    position: relative;
+    z-index: 5;
 }
 
 .my li {
@@ -110,21 +120,15 @@ main {
     cursor: pointer;
 }
 
-iframe {
-    border: none;
-    width: 100%;
-    height: 85vh;
-}
+@media screen and (max-width: 624px) {
 
-@media screen and (max-width: 623px) {
-
-    .content {
-        justify-content: center;
+    .content {        
         flex-wrap: wrap;
+        justify-content: center;
     }
-
+    
     .sinopsis {
         margin: 20px 0;
     }
 
-} 
+}

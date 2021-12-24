@@ -13,11 +13,12 @@ header {
     justify-content: space-between;
     align-items: center;
     background-color: var(--color);
-    padding: 0 28px;
+    padding: 0 20px;
 }
 
 header img {
     width: 60px;
+    border-radius: 50%;
 }
 
 [alt="usuario-de-perfil"]:hover {
@@ -58,11 +59,18 @@ main h2 {
     width: 200px;
 }
 
+.my-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100.42px;
+    height: 130px;
+    margin-top: 72.5px;
+}
+
 .my {
     display: none;
-    position: absolute;
-    top: 80px;
-    right: 11px;
     border: 1px solid #000;
     border-radius: 5px;
 }

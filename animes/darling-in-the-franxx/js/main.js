@@ -1,4 +1,12 @@
-document.getElementById("username").innerHTML = localStorage.getItem("NombreUsuario");
+if (localStorage.getItem("NombreUsuario") == null) {
+
+    document.getElementById("username").innerHTML = '<a href="../../log/">Iniciar Sesión</a>'
+
+} else {
+
+    document.getElementById("username").innerHTML = localStorage.getItem("NombreUsuario");
+
+}
 
 document.addEventListener("click", (e) => {
 
@@ -17,7 +25,7 @@ document.addEventListener("click", (e) => {
 document.getElementById("exit").addEventListener("click", () => {
 
     localStorage.clear();
-    window.location.href = "log/";
+    window.location.href = "../../log/";
 
 });
 
@@ -34,3 +42,13 @@ document.addEventListener("click", (e) => {
     }
 
 });
+
+// Cargar icon
+
+const recentImgDataUrl = localStorage.getItem("icon");
+
+    if (recentImgDataUrl) {
+
+        document.getElementById("perfil").setAttribute("src", recentImgDataUrl);
+
+    }
